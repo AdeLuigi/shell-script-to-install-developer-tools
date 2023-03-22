@@ -11,17 +11,17 @@ sudo snap install discord
 
 sudo apt install nodejs
 
-sudo apt --only-upgrade install google-chrome-stable
+sudo apt --only-upgrade install -y google-chrome-stable
 
 #JAVA
 
-sudo apt install default-jre
+sudo apt install -y default-jre
 
-sudo apt install default-jdk
+sudo apt install -y default-jdk
 
 # DOCKER
 
-sudo apt-get install \
+sudo apt-get install -y \
     ca-certificates \
     curl \
     gnupg \
@@ -35,15 +35,14 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
-sudo apt-get update
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get instal -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 sudo docker run hello-world
 
 # MYSQL
-sudo apt-get install mysql-server
+sudo apt-get install -y mysql-server
 
 #flutter
 
-sudo snap install flutter --classic
+sudo snap install -y flutter --classic
