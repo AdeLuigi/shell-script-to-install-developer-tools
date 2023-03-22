@@ -13,9 +13,9 @@ sudo snap install flutter --classic
 
 sudo snap install android-studio --classic
 
-sudo snap install intellij-idea-community --classic
+sudo snap install intellij-idea-community --classic --edge
 
-sudo apt install nodejs
+sudo apt install -y nodejs
 
 sudo apt --only-upgrade install -y google-chrome-stable
 
